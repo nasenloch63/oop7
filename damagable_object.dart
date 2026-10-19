@@ -1,0 +1,2 @@
+ int maxHealth;
+  int health;
