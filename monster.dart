@@ -1,4 +1,8 @@
-class Monster {
-Monster("EvilMob", 30, 60, 100);
-BigMonster("BigEvilMob", 70, 120, 200);
+import 'damageable_object.dart';
+
+class Monster extends DamageableObject {
+@override
+void onKilled() {
+  print("Das Monster ist gestorben!");
+  }
 }

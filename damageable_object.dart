@@ -1,4 +1,5 @@
 import 'game_object.dart';
+
 abstract class DamageableObject extends GameObject {
 int maxHealth;
 int health;
@@ -14,7 +15,5 @@ void takeDamage(int damage) {
     onKilled();
   }
 }
-void onKilled() {
-  print("Das Monster ist gestorben.");
-}
+void onKilled();
 }

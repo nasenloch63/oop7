@@ -1,3 +1,8 @@
-class Player {
-Player("Yasin", 10, 20, 100);
+import 'damageable_object.dart';
+
+class Player extends DamageableObject {
+@override
+void onKilled () {
+  print("Der Spieler $name ist gestorben!");
+  }
 }
