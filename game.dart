@@ -2,21 +2,29 @@ import 'monster.dart';
 import 'player.dart';
 
 void main() {
-  var player = Player("Nase", 10, 20, 100, 100, 0, 3);
-  var monster = Monster(
-    "Zombie",
-    50,
-    30,
+  var player = Player(
+    name: "Nase",
+    posX: 10,
+    posY: 20,
+    maxHealth: 100,
     100,
-    80,
-    5,
-    Color.green,
+    0,
+    3,
+  );
+  var monster = Monster(
+    name: "Zombie",
+    posX: 50,
+    posY: 30,
+    maxHealth: 100,
+    health: 80,
+    threatLevel: 5,
+    color: Color.green,
   );
 
   print(monster.makeNoise());
   monster.takeDamage(30);
   print("Monster HP: ${monster.health}");
-  
+
   player.takeDamage(100);
   print("Verbleibende Leben: ${player.livesRemaining}");
   monster.takeDamage(50);
