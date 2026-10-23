@@ -7,9 +7,9 @@ void main() {
     posX: 10,
     posY: 20,
     maxHealth: 100,
-    100,
-    0,
-    3,
+    health: 100,
+    score: 0,
+    livesRemaining: 3,
   );
   var monster = Monster(
     name: "Zombie",
