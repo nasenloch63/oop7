@@ -21,9 +21,17 @@ void main() {
     color: Color.green,
   );
 
-  print(monster.makeNoise());
-  monster.takeDamage(30);
-  print("Monster HP: ${monster.health}");
-  
-  player.takeDamage(100);
-  print("Verbleibende Leben: ${player.livesRemaining}");
+print(monster.makeNoise());
+
+print("Nase greift den Zombie an!");
+monster.takeDamage(30);
+print("Monster HP: ${monster.health}");
+
+print("Zombie greift Nase an!");
+player.takeDamage(30);
+print("Spieler HP: ${player.health}");
+
+print("Nase greift den Zombie erneut an!");
+monster.takeDamage(50);
+monster.despawn();
+}
